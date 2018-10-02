@@ -38,6 +38,7 @@ let startExecutionTime = strftime("%T")
 echo "Execution started at: " . startExecutionTime
 Py << endPython
 from vim_shell_executor import *
+from random import randint
 
 def create_new_buffer(contents):
     vim.command('normal! Hmx``')
